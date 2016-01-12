@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>cienciacomputacao.com.br</title>
+    <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" rel="stylesheet">
+</head>
+<body>
+<!-- Defina o name de cada input, isso sera importante para chamar ela no arquivo php -->
+<form name="form" method="post" action="php/gerar_pdf.php">
+    <div class="row">
+        <div class="col-xs-3">
+            <label>Nome do Cliente</label>
+            <input type="text" class="form-control" name="nameCliente">
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-xs-3">
+            <label>CPF:</label>
+            <input type="text" class="form-control" name="cpfCliente">
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-xs-3">
+            <label>Email:</label>
+            <input type="email" class="form-control" name="emailCliente">
+        </div>
+    </div>
+    </br>
+    <button type="submit" class="btn btn-primary">GERAR</button>
+</form>
+</body>
+</html>
